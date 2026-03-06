@@ -1,0 +1,8 @@
+!
+! SNMP Configuration for {{ device.name }}
+!
+snmp-server community {{ device.data.snmp_community | default('public') }} RO
+snmp-server enable traps snmp authentication linkup linkdown coldstart warmstart
+snmp-server location {{ device.data.location | default('Unknown Location') }}
+snmp-server contact Network-Ops@tech-by-nasa.com
+!

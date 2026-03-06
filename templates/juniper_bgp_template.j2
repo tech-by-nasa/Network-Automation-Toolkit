@@ -1,0 +1,10 @@
+#
+# BGP Configuration for {{ device.name }}
+#
+set protocols bgp group EBGP type external
+set protocols bgp group EBGP neighbor 10.0.0.1 peer-as 65001
+set protocols bgp group EBGP neighbor 10.0.0.1 description "Peer to Customer-X"
+set protocols bgp group EBGP neighbor 10.0.0.2 peer-as 65002
+set protocols bgp group EBGP neighbor 10.0.0.2 description "Peer to Customer-Y"
+set routing-options autonomous-system {{ device.data.asn | default(64512) }}
+#

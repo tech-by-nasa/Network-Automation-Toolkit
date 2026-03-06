@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+*.env
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Logs and Data
+data/backups/
+data/logs/
+*.log
+
+# Sensitive Files (ensure these are NOT committed)
+*.secret
+*.key
+inventory.yaml
+config.py  # If it contains sensitive credentials, otherwise commit without credentials.
