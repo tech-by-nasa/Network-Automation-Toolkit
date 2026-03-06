@@ -1,0 +1,5 @@
+netmiko
+pyyaml
+Jinja2
+argparse
+pytest
